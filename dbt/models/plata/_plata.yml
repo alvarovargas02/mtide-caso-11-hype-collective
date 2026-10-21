@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: stg_parte
+    description: "El parte diario limpio, con las dos entregas"
+    columns:
+      - name: post_id
+        data_tests: [unique, not_null]
+      - name: creador
+        data_tests: [not_null]
+      - name: sector
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["moda", "gaming", "fitness", "belleza", "viajes", "tecnología", "comida", "educación"]

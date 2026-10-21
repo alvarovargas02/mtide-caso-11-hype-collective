@@ -1,0 +1,75 @@
+# Caso 11 · Hype Collective — el encargo
+
+> Negocio y datos **ficticios**, creados para la asignatura. Es tu mismo caso de la J3.
+
+## Qué ha pasado desde la J3
+
+En la J3 limpiaste el parte en un cuaderno y contestaste tres preguntas. Hype Collective quiere su parte de publicaciones cargado solo. Y acaba de lanzar una **campaña de pago** con seis creadores: quiere saber cuál da más por cada euro, con el registro de interacciones de la plataforma.
+
+Ahora conviertes aquel cuaderno en un **lakehouse** de verdad, en tu propio repositorio, y publicas un **portal** que
+cuenta lo que has hecho. Cómo preparar el repositorio y el ciclo de trabajo de cada bloque: [README.md](README.md).
+
+## Lo que tienes al empezar
+
+- En bronce, el parte de la J3: `lakehouse/bronce/parte/fecha_carga=2026-04-21/`.
+- En `dbt/models/plata/stg_parte.sql`, la limpieza que hiciste en la J3, con unos tests básicos (`_plata.yml`, `dbt/tests/`).
+- `dbt build` en verde. La capa oro, vacía: la construyes tú.
+- En `paginas/`, las cuatro páginas del portal que escribirás, cada una con un guion de lo que debe contar.
+
+**Bronce no se toca nunca**: todo arreglo va en plata.
+
+---
+
+## Bloque 1 · La remesa nueva · rama `remesa`
+
+1. `python herramientas/sistema_simulado.py remesa`: llega una entrega nueva del parte en `bronce/parte/fecha_carga=2026-05-01/` (unos diez días más de publicaciones).
+2. `dbt build --project-dir dbt --profiles-dir dbt`. Las visualizaciones de la remesa vienen copiadas de las apps, tal y como las enseñan. `dbt build` ni siquiera llega a los tests.
+3. Arregla `dbt/models/plata/stg_parte.sql` hasta que `dbt build` quede en verde y el problema esté resuelto (no siempre hay un test que lo grite: a veces tienes que escribirlo tú). Deja un comentario en el SQL: **qué** venía mal y **por qué** lo arreglas así.
+4. Escribe `paginas/1-remesa.md`.
+5. Pull request en tu repositorio, Actions en verde y lo fusionas.
+
+## Bloque 2 · El oro · rama `oro`
+
+Crea en `dbt/models/oro/` estos modelos, **con estos nombres exactos** (el portal y la jornada de Visualización los leen así):
+
+| Modelo | Qué tiene |
+|---|---|
+| `dim_creador` | una fila por cada valor distinto de `creador` |
+| `dim_plataforma` | una fila por cada valor distinto de `plataforma` |
+| `dim_sector` | una fila por cada valor distinto de `sector` |
+| `fact_publicaciones` | una publicación por fila: `post_id`, `fecha`, `creador`, `plataforma`, `sector`, `miles_vistas`, `horas_produccion`, `importe_eur`, `con_incidencia` |
+| `pregunta_1` | ¿Qué **sector** paga menos por cada mil visualizaciones? Una fila por `sector`, con `sector` en la primera columna y `ingreso_mil` (€ por mil vistas), de menor a mayor |
+| `pregunta_2` | ¿Qué **creador** necesita más horas de producción por cada 100.000 visualizaciones? Una fila por `creador`, con `creador` en la primera columna y `horas_100mil` (h por 100.000 vistas), de mayor a menor |
+| `pregunta_3` | ¿Qué **plataforma** acumula más incidencias por cada millón de visualizaciones? Una fila por `plataforma`, con `plataforma` en la primera columna y `incidencias_millon` (incidencias por millón de vistas), de mayor a menor |
+
+En un `_oro.yml`, sus tests: en las dimensiones, `unique` y `not_null`; en el hecho, `unique` en `post_id` y `relationships` con cada dimensión.
+
+Escribe `paginas/2-oro.md`: tu estrella y las tres respuestas. Con la remesa nueva (un 25 % más de datos), ¿siguen saliendo las mismas que en la J3? Pull request, verde, fusionas.
+
+## Bloque 3 · Fuentes nuevas · rama `fuentes`
+
+1. `python herramientas/sistema_simulado.py fuentes`: llegan estos ficheros a bronce y quedan declarados en `dbt/models/plata/_fuentes.yml`.
+
+| Fichero | Qué es | Columnas |
+|---|---|---|
+| `bronce/campana/posts_campana.csv` | los seis posts de la campaña, con su creador y su **alcance** (personas a las que llegó) | post_id, creador, alcance |
+| `bronce/campana/tarifas.csv` | lo que cobra cada creador por la campaña | creador, tarifa_campana_eur |
+| `bronce/eventos/interacciones_campana_2026-05-03.json` | La plataforma exporta un registro con cada like, comentario o compartido de los posts de la campaña. | interaccion_id, post_id, creador, usuario_id, tipo, ts |
+
+2. **El giro.** La API **repite** algunas interacciones (mismo `interaccion_id`). Y hay cuentas que no son personas: interactúan **demasiado**, a ráfagas.
+3. Modelos de plata: `stg_posts_campana`, `stg_tarifas` y `stg_eventos` (el registro lo lees con `source('bronce', 'eventos')`).
+4. **Test protagonista.** **Un post no puede tener más interacciones que personas a las que llegó** (`alcance`). Escribe un test singular. Rojo con los datos tal cual; verde cuando sepas qué interacciones no cuentan.
+5. **Pregunta 4** (`dbt/models/oro/pregunta_4.sql`): ¿Qué creador da **más interacciones reales por euro**? Compáralo con lo que saldría sin limpiar: ¿a quién habría pagado más la agencia por error?
+6. Escribe `paginas/3-fuentes.md`. Pull request, verde, fusionas.
+
+## Bloque 4 · El memo · rama `memo`
+
+Escribe `paginas/memo.md`: el memo para la dirección de Hype Collective, con las cuatro respuestas citadas con marcas. La comprobación exige que existan `pregunta_1` a `pregunta_4`. Repasa el portal entero antes de fusionar.
+
+---
+
+## Lo que se entrega
+
+- Tu repositorio en tu cuenta, con los cuatro pull requests fusionados y la última ejecución de `main` en verde.
+- Tu portal publicado, con sus cuatro páginas escritas, y tu `dbt-docs`.
+- La presentación oral (5 minutos): con tu portal en pantalla, el problema de calidad, tu test protagonista, las cuatro respuestas y tu recomendación.

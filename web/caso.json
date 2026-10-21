@@ -1,0 +1,12 @@
+{
+ "num": 11,
+ "empresa": "Hype Collective",
+ "subtitulo": "agencia de creadores de contenido",
+ "contexto": "Hype Collective quiere su parte de publicaciones cargado solo. Y acaba de lanzar una **campaña de pago** con seis creadores: quiere saber cuál da más por cada euro, con el registro de interacciones de la plataforma.",
+ "preguntas": [
+  "¿Qué **sector** paga menos por cada mil visualizaciones?",
+  "¿Qué **creador** necesita más horas de producción por cada 100.000 visualizaciones?",
+  "¿Qué **plataforma** acumula más incidencias por cada millón de visualizaciones?",
+  "¿Qué creador da **más interacciones reales por euro**? Compáralo con lo que saldría sin limpiar: ¿a quién habría pagado más la agencia por error?"
+ ]
+}
