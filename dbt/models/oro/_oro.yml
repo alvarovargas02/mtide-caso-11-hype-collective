@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: dim_creador
+    columns:
+      - name: creador
+        data_tests:
+          - unique
+          - not_null
+
+  - name: dim_plataforma
+    columns:
+      - name: plataforma
+        data_tests:
+          - unique
+          - not_null
+
+  - name: dim_sector
+    columns:
+      - name: sector
+        data_tests:
+          - unique
+          - not_null
+
+  - name: fact_publicaciones
+    columns:
+      - name: post_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: creador
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_creador')
+                field: creador
+
+      - name: plataforma
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_plataforma')
+                field: plataforma
+
+      - name: sector
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_sector')
+                field: sector
