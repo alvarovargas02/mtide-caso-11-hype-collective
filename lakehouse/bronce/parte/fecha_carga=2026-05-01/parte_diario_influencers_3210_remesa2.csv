@@ -1,0 +1,96 @@
+post_id,fecha,creador,plataforma,sector,miles_vistas,horas_produccion,importe_eur,incidencia
+POST-00386,2026-04-21,@julia.reads,Pinterest,educación,154,6.3,1665.93,
+POST-00387,2026-04-21,@LUNAVIBES,TikTok,viajes,103K,4.5,2821.93,
+POST-00388,2026-04-21,@leo.moves,YouTube,moda,73K,2.8,2150.98,
+POST-00389,2026-04-21,@IKER.TECH,TikTok,comida,141,6.0,3544.35,
+POST-00390,2026-04-21,@IKER.TECH,Instagram,viajes,63,2.3,1752.92,
+POST-00391,2026-04-21,@SARATRAVELS,Pinterest,moda,154,6.7,4432.0,shadowban
+POST-00392,2026-04-22,@leo.moves  ,Twitch,moda,80K,3.2,2376.37,
+POST-00393,2026-04-22,@LUNAVIBES,YouTube,comida,152K,5.7,3761.86,
+POST-00394,2026-04-22,@IKER.TECH,YouTube,belleza,71,2.6,2231.97,
+POST-00395,2026-04-22,@PIXELHUGO,YouTube,tecnología,141K,4.8,4631.58,
+POST-00396,2026-04-22,@leo.moves,TikTok,moda,137K,5.9,3993.76,
+POST-00397,2026-04-22,@julia.reads  ,TikTok,comida,86,3.5,2197.1,
+POST-00398,2026-04-22,@VERA.STYLE,Twitch,viajes,111K,4.4,3086.92,
+POST-00399,2026-04-22,@leo.moves,YouTube,tecnología,113K,4.3,3711.48,
+POST-00400,2026-04-22,@lunavibes,Pinterest,tecnología,104K,4.6,3450.55,
+POST-00401,2026-04-23,@vera.style,YouTube,viajes,123K,4.5,3324.8,
+POST-00402,2026-04-23,@bruno.cooks,Twitch,belleza,137K,6.7,4300.21,
+POST-00403,2026-04-23,@BRUNO.COOKS,Instagram,gaming,130K,6.0,3043.32,shadowban
+POST-00404,2026-04-23,@dani.plays,TikTok,gaming,161,7.1,3732.71,
+POST-00405,2026-04-23,@leo.moves,Instagram,fitness,105,3.8,2759.95,
+POST-00406,2026-04-23,@julia.reads,YouTube,gaming,159,5.7,3609.84,
+POST-00407,2026-04-23,@iker.tech,YouTube,moda,89K,3.3,2685.47,
+POST-00408,2026-04-24,@iker.tech,TikTok,comida,83K,3.7,2133.6,
+POST-00409,2026-04-24,@PIXELHUGO,YouTube,tecnología,160,5.7,5282.51,
+POST-00410,2026-04-24,@nora.eats,Pinterest,fitness,134,5.9,3497.62,
+POST-00411,2026-04-24,@lunavibes,Twitch,comida,169,6.5,4183.9,
+POST-00412,2026-04-24,@BRUNO.COOKS,Twitch,belleza,161K,8.1,4973.07,
+POST-00413,2026-04-24,@lunavibes,X,gaming,130K,5.1,3023.81,retraso
+POST-00414,2026-04-24,@lunavibes,Instagram,fitness,85K,3.0,2256.42,
+POST-00415,2026-04-24,@leo.moves  ,X,fitness,101,4.0,2665.88,
+POST-00416,2026-04-25,@lunavibes,Twitch,fitness,134K,5.1,3491.66,
+POST-00417,2026-04-25,@lunavibes,Pinterest,viajes,81K,3.6,2267.41,
+POST-00418,2026-04-25,@julia.reads,YouTube,gaming,98K,3.5,2292.07,
+POST-00419,2026-04-25,@dani.plays,TikTok,gaming,172K,7.5,3941.39,
+POST-00420,2026-04-25,@vera.style,Twitch,gaming,224,8.4,5070.97,
+POST-00421,2026-04-25,@LEO.MOVES,Twitch,moda,91K,3.7,2726.62,
+POST-00422,2026-04-25,@bruno.cooks,Twitch,comida,137,6.5,3415.83,
+POST-00423,2026-04-25,@leo.moves,YouTube,viajes,57K,2.2,1629.61,
+POST-00424,2026-04-25,@saratravels,Pinterest,fitness,142,6.0,3675.8,
+POST-00425,2026-04-25, @iker.tech ,TikTok,viajes,46,2.0,1311.77,
+POST-00426,2026-04-26, @bruno.cooks ,X,belleza,92K,4.5,2961.77,reclamación de la marca
+POST-00427,2026-04-26,@bruno.cooks,YouTube,moda,136,6.2,3959.01,
+POST-00428,2026-04-26,@vera.style,Twitch,belleza,116K,4.5,3645.28,
+POST-00429,2026-04-26,@vera.style,Instagram,fitness,127,4.7,3327.7,
+POST-00430,2026-04-26, @leo.moves ,Twitch,tecnología,190,7.3,6255.64,retraso
+POST-00431,2026-04-26,@IKER.TECH,Twitch,comida,99K,3.9,2572.17,
+POST-00432,2026-04-26,@dani.plays,Pinterest,belleza,133K,6.0,4118.9,
+POST-00433,2026-04-26,@vera.style,YouTube,gaming,122,4.4,2842.94,
+POST-00434,2026-04-26,@JULIA.READS,TikTok,comida,193,7.8,4815.87,
+POST-00435,2026-04-26,@vera.style,X,belleza,77,3.0,2470.17,retraso
+POST-00436,2026-04-26,@julia.reads,Twitch,viajes,46K,1.7,1307.01,
+POST-00437,2026-04-26,@LUNAVIBES,X,tecnología,122,4.5,4067.06,shadowban
+POST-00438,2026-04-26,@bruno.cooks,X,educación,194,9.6,2113.7,
+POST-00439,2026-04-26,@BRUNO.COOKS,TikTok,tecnología,139,7.4,4610.66,
+POST-00440,2026-04-26,@vera.style,Instagram,moda,108,4.0,3176.31,
+POST-00441,2026-04-27,@IKER.TECH,X,gaming,220,8.5,4960.81,
+POST-00442,2026-04-27,@nora.eats,Pinterest,belleza,91,3.9,2858.39,reclamación de la marca
+POST-00443,2026-04-27,@bruno.cooks,Instagram,moda,142K,6.5,4135.2,
+POST-00444,2026-04-27,@LUNAVIBES,Instagram,educación,208,7.3,2245.41,
+POST-00445,2026-04-27, @pixelhugo ,Twitch,gaming,123K,4.5,2801.82,
+POST-00446,2026-04-27,@julia.reads,X,moda,159K,5.7,4545.63,
+POST-00447,2026-04-27,@vera.style,Twitch,comida,87K,3.5,2269.46,
+POST-00448,2026-04-27,@dani.plays,YouTube,tecnología,192K,7.3,6303.13,
+POST-00449,2026-04-27,@LEO.MOVES,TikTok,fitness,116K,5.1,3027.43,post retirado
+POST-00450,2026-04-28,@dani.plays,Instagram,fitness,74,2.8,2052.95,
+POST-00451,2026-04-28,@LUNAVIBES,Pinterest,educación,103K,4.3,1173.37,
+POST-00452,2026-04-28,@nora.eats  ,Instagram,educación,226K,8.2,2391.9,
+POST-00453,2026-04-28,@NORA.EATS,Twitch,tecnología,127K,5.0,4242.24,
+POST-00454,2026-04-28,@leo.moves,X,belleza,113K,4.4,3488.87,shadowban
+POST-00455,2026-04-28, @saratravels ,YouTube,tecnología,173,6.2,5674.66,
+POST-00456,2026-04-28,@nora.eats,X,viajes,117K,4.6,3179.75,reclamación de la marca
+POST-00457,2026-04-28,@vera.style,Pinterest,comida,132K,5.7,3362.01,
+POST-00458,2026-04-28,@julia.reads,Instagram,comida,134,4.6,3370.52,
+POST-00459,2026-04-28,@lunavibes,TikTok,tecnología,170K,7.0,5555.67,reclamación de la marca
+POST-00460,2026-04-28,@SARATRAVELS,Pinterest,comida,83K,3.5,2107.77,
+POST-00461,2026-04-28,@LEO.MOVES,X,gaming,172,6.6,3895.34,post retirado
+POST-00462,2026-04-28,@nora.eats,YouTube,tecnología,73K,2.7,2464.18,
+POST-00463,2026-04-29,@vera.style,YouTube,educación,120,4.4,1356.76,
+POST-00464,2026-04-29,@dani.plays,X,gaming,142K,5.7,3311.08,retraso
+POST-00465,2026-04-29,@DANI.PLAYS,Pinterest,educación,181K,8.2,1953.4,
+POST-00466,2026-04-29,@dani.plays,TikTok,viajes,114K,5.2,3130.18,
+POST-00467,2026-04-29,@JULIA.READS,X,comida,71,2.5,1915.59,post retirado
+POST-00468,2026-04-29,@saratravels,X,fitness,133K,4.9,3487.35,shadowban
+POST-00469,2026-04-29,@vera.style,X,tecnología,111K,4.2,3716.47,
+POST-00470,2026-04-29,@VERA.STYLE,X,viajes,115K,4.5,3098.3,
+POST-00471,2026-04-29,@saratravels,Instagram,gaming,128K,4.4,2968.32,
+POST-00472,2026-04-29,@LEO.MOVES,YouTube,gaming,203,7.7,4647.05,
+POST-00473,2026-04-29,@julia.reads,Pinterest,fitness,142K,5.6,3714.89,
+POST-00474,2026-04-30,@lunavibes  ,TikTok,viajes,132K,5.7,3635.66,
+POST-00475,2026-04-30,@DANI.PLAYS,Instagram,fitness,86K,3.2,2293.62,
+POST-00476,2026-04-30,@IKER.TECH,Instagram,comida,103,3.6,2616.51,
+POST-00477,2026-04-30,@DANI.PLAYS,Instagram,comida,78K,3.0,2032.75,
+POST-00478,2026-04-30,@julia.reads,Twitch,fitness,139,5.1,3601.96,retraso
+POST-00479,2026-04-30,@dani.plays,Instagram,viajes,95K,3.5,2657.7,
+POST-00480,2026-04-30, @julia.reads ,X,educación,82K,3.0,953.52,
