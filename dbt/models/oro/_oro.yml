@@ -49,3 +49,24 @@ models:
               arguments:
                 to: ref('dim_sector')
                 field: sector
+  - name: historia_sector
+    columns:
+      - name: sector
+        data_tests:
+          - unique
+          - not_null
+
+      - name: miles_vistas_por_euro
+        data_tests:
+          - not_null
+
+  - name: historia_semanal
+    columns:
+      - name: semana
+        data_tests:
+          - unique
+          - not_null
+
+      - name: miles_vistas_totales
+        data_tests:
+          - not_null

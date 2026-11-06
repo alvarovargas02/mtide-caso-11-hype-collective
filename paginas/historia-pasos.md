@@ -1,25 +1,40 @@
-<!-- pendiente: borra esta línea cuando empieces a escribir la página -->
 # Cómo se construyó la historia
 
-La portada cuenta el destino. Aquí queda el viaje: la decisión que hay detrás, lo que buscamos en los datos y lo que dejamos fuera.
+La decisión es estudiar una mayor inversión en educación. Para llegar a ella hemos analizado las publicaciones, su evolución y la eficiencia de cada sector.
 
 ## Paso 1 · De tema a decisión
 
-> ✏️ Una tabla con tres filas: el tema, la pregunta y la decisión (con quién decide, para cuándo y qué consecuencia tiene).
-> ✏️ La prueba: ¿qué hará distinto alguien después de leer tu portada?
+| Elemento | Definición |
+|---|---|
+| Tema | Eficiencia de la inversión en publicaciones. |
+| Pregunta | ¿Qué sectores generan más visualizaciones por euro? |
+| Decisión | Probar una mayor inversión en educación antes del 30 de noviembre de 2026. |
 
-## Paso 2 · Qué se mueve en los datos
+## Paso 2 · Qué muestran los datos
 
-> ✏️ 2a · El terreno: un bloque ```cifras con tres o cuatro cifras de contexto y gráficos exploratorios de tus datos tal cual (sin «destacar:», con títulos que describen): cómo evoluciona algo en el tiempo («tipo: linea») y cómo se reparte un valor («tipo: histograma»). ¿Destaca algo a simple vista?
-> ✏️ 2b · El disparador: el gráfico en el que algo se sale de lo normal (normalmente, la misma cifra dividida por lo que corresponde) y, si tiene dos dimensiones (zona y hora, producto y día…), un «tipo: calor». El hallazgo en una frase, con su magnitud y su motivo. Si el motivo no está comprobado, di que es una hipótesis.
-> ✏️ 2c · Qué lo puede explicar: anomalía, cambio significativo, fuerzas del mercado, iniciativas propias. Di cuáles aplican y cuáles no.
+Se han analizado 480 publicaciones entre el 2 de marzo y el 30 de abril de 2026.
 
-## Paso 3 · Qué datos entran y cuáles se quedan fuera
+```cifras
+{{ fact_publicaciones.filas }} | Publicaciones analizadas
+{{ historia_sector.sector[0] }} | Sector más eficiente
+{{ historia_semanal.semana[0] }} | Inicio del periodo
+{{ historia_semanal.semana[8] }} | Última semana
 
-> ✏️ Una tabla «dato candidato | ¿pasa el filtro? | dónde se usa». El criterio no es si interesa, sino si cambia la decisión.
-> ✏️ El contraste sin limpiar frente a limpio, si al limpiar tus datos corregiste algo que cambiaba las cifras: ¿aguanta la conclusión? Y un «tipo: eje» con una comparación tuya, para ver cuánto engañaría un eje cortado.
-> ✏️ El alcance: de dónde salen los datos, qué periodo cubren y qué se ha quitado, con cifras con marca.
+### Evolución semanal
 
-## Las cinco comprobaciones
+```grafico
+tipo: linea
+titular: Las visualizaciones cambian a lo largo del periodo
+modelo: historia_semanal
+x: semana
+y: miles_vistas_totales
+```
 
-> ✏️ Una línea por comprobación: hay una decisión detrás, el titular afirma, cada cifra tiene fuente, la evidencia es diversa y lo que no cuadra se dice.
+## Distribución de visualizaciones
+
+```grafico
+tipo: histograma
+titular: Las publicaciones tienen distintos niveles de visualizaciones
+modelo: fact_publicaciones
+columna: miles_vistas
+```
